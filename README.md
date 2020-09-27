@@ -1,44 +1,69 @@
 # dotfiles
-Some configs and scripts for my Arch Linux setup.
+
+Some dotfiles, configs, and scripts for my Arch Linux setup.
 
 ## programs
 
-### login/display manager: lightdm
+### login/display manager: `lightdm`
 
-why? it's in the name, it's light.
+it's in the name, it's light.
 
-### screen locker: light-locker
+### screen locker: `light-locker`
 
-why? it's in the name, it's a locker.
+it's in the name, it's a locker.
 
-### window manager: bspwm
+### window manager: `bspwm`
 
-why? binary space partition sounds cool.
+binary space partition sounds cool.
 
-### hotkey daemon: sxhkd
+### hotkey daemon: `sxhkd`
 
-why? came with bspwm.
+came with bspwm.
 
-### application launcher: rofi
+### application launcher: `rofi`
 
-why? it's pretty neat.
+it's pretty neat.
 
-### terminal emulator: urxvt
+### terminal emulator: `urxvt`
 
-why? people keep recommending it, need to find out why it's so good tho.
+people keep recommending it, need to find out why it's so good tho.
 
-### browser: firefox-developer-edition
+### browser: `firefox-developer-edition`
 
-why? it's a browser.
+it's a browser.
 
-### image viewer: feh
+### image viewer: `feh`
 
-why? it's simple.
+it's simple.
 
-### file manager: ranger
+### file manager: `ranger`
 
-why? it's neat.
+it's neat.
 
-### night light: redshift
+### night light: `redshift`
 
-why? what else?
+what else?
+
+### text editor: `vim`
+
+still learning.
+
+### password manager: `keepassxc`
+
+foss.
+
+### sound server: `pulseaudio`
+
+foss.
+
+### volume control: `pavucontrol`
+
+simple.
+
+### email client: `thunderbird`
+
+foss.
+
+### multimedia player: `vlc`
+
+foss.
