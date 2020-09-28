@@ -1,6 +1,2 @@
-xterm*background: black
-xterm*foreground: lightgray
-
-xterm*VT100.Translations: #override \
-	Ctrl Shift <Key> V: insert-selection(CLIPBOARD) \n\
-	Ctrl Shift <Key> C: copy-selection(CLIPBOARD)
+URxvt*foreground: #002b36
+URxvt*background: #657b83
