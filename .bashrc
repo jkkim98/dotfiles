@@ -5,24 +5,26 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-PS1='[\u@\h \W]\$ '
-
-# Print sxhkd keyboard combos
-#alias combo='cat ~/.config/sxhkd/sxhkdrc | awk '\''/^[a-z]/ && last {print $0,"\t",last} {last=""} /^#/{last=$0}'\'' | column -t -s $'\''\t'\'' | fzf'
+# show time, user and hostname, and working directory on the prompt
+PS1='\A \u@\h \w \$ '
 
 #
-# MY aliases for common utilities
+## sytem
 #
 
-# my ls
+# logout
+alias logout='kill -9 -1'
+
+#
+## modified common commands
+#
+
+# full ls
 alias ll='ls -a -l --time-style=long-iso --color=auto'
 
 #
-# MY aliases for other utilities
+## edit files
 #
-
-# my file explorer
-alias myfilex='ranger'
 
 # edit sxhkdrc
 alias editsxhkdrc='vim ~/.config/sxhkd/sxhkdrc'
@@ -30,8 +32,9 @@ alias editsxhkdrc='vim ~/.config/sxhkd/sxhkdrc'
 # edit bashrc
 alias editbashrc='vim ~/.bashrc'
 
-# logout
-alias logout='kill -9 -1'
+#
+## directory shortcuts
+#
 
-# directory shortcuts
+# ~/projects
 alias projects='cd ~/projects'
