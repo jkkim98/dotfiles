@@ -1,2 +1,8 @@
-URxvt*foreground: #002b36
-URxvt*background: #657b83
+#
+## urxvt
+#
+
+URxvt*foreground: white
+URxvt*background: black
+
+URxvt*scrollBar: false
