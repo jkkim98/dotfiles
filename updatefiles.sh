@@ -3,6 +3,8 @@ cp ~/.bash_profile		.
 cp ~/.xprofile			.
 cp ~/.Xresources		.
 
+cp -r ~/scripts			.
+
 cp -r ~/.config/bspwm		./.config
 cp -r ~/.config/redshift	./.config
 cp -r ~/.config/sxhkd		./.config

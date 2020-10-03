@@ -20,33 +20,4 @@ GIT_PS1_SHOWUPSTREAM='verbose name git'
 # show time, user and hostname, and working directory on the prompt
 PROMPT_COMMAND='__git_ps1 "\A \u@\h:\w" "\\\$ "'
 
-#
-## sytem
-#
-
-# logout
-alias logout='kill -9 -1'
-
-#
-## modified common commands
-#
-
-# full ls
-alias ll='ls -a -l --time-style=long-iso --color=auto'
-
-#
-## edit files
-#
-
-# edit sxhkdrc
-alias editsxhkdrc='vim ~/.config/sxhkd/sxhkdrc'
-
-# edit bashrc
-alias editbashrc='vim ~/.bashrc'
-
-#
-## directory shortcuts
-#
-
-# ~/projects
-alias projects='cd ~/projects'
+source ~/scripts/bash_aliases.sh
