@@ -1,8 +1,0 @@
-#
-## urxvt
-#
-
-URxvt*foreground: white
-URxvt*background: black
-
-URxvt*scrollBar: false
