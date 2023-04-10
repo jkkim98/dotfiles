@@ -1,0 +1,21 @@
+alias gitlogin='eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_ed25519'
+
+# basic
+
+alias gs='git status '
+alias gd='git diff '
+alias ga='git add '
+alias gaa='git add . && gs'
+alias gap='git add -p && gs'
+alias gds='git diff --staged'
+alias gc='git commit '
+alias gca='git commit --amend'
+alias gp='git push '
+alias gpf='git push -f'
+alias gpa='git remote | xargs -I remotes git push remotes master'
+
+# log
+
+alias gl='git log '
+alias gls='git log --stat'
+alias glp='git log -p'
