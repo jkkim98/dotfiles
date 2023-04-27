@@ -1,0 +1,6 @@
+[user]
+	email = 16183105+jkkim98@users.noreply.github.com
+	name = jkkim98
+[core]
+	autoclrf = false
+	editor = vim

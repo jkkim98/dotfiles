@@ -19,3 +19,7 @@ alias gpa='git remote | xargs -I remotes git push remotes master'
 alias gl='git log '
 alias gls='git log --stat'
 alias glp='git log -p'
+
+# dotfilegit
+
+alias dfgit='git --git-dir=.dotfilegit'
