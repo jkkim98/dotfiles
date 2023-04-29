@@ -2,6 +2,7 @@ unalias -a
 
 alias a='alias'
 alias c='clear'
+alias e='explorer'
 alias l='ls -alshFG --time-style=long-iso --color=always'
 alias tree='tree -CAFa -I "CVS|*.*.package|.svn|.git|.hg|node_modules|bower_components" --dirsfirst'
 alias v='vim'

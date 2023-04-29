@@ -16,7 +16,7 @@ alias gpa='git remote | xargs -I remotes git push remotes master'
 
 # log
 
-alias gl='git log '
+alias gl='git log --oneline --graph'
 alias gls='git log --stat'
 alias glp='git log -p'
 
