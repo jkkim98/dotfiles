@@ -2,5 +2,17 @@
 	email = 16183105+jkkim98@users.noreply.github.com
 	name = jkkim98
 [core]
+	# true: checkout as CRLF and commit as LF
+	# input: checkout as is and commit as LF
+	# false: checkout as is and commit as is
 	autoclrf = false
 	editor = vim
+[pull]
+	rebase = true
+[submodule]
+	recurse = true
+# use a particular .gitconfig if at a certain repo
+[includeIf "gitdir:~/git/example"]
+	path = "~/.gitconfig-example"
+[alias]
+	ca = "commit --amend"
