@@ -9,6 +9,8 @@
 	editor = vim
 [pull]
 	rebase = true
+[merge]
+	conflictstyle = diff3
 [submodule]
 	recurse = true
 # use a particular .gitconfig if at a certain repo
