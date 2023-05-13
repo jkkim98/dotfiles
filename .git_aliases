@@ -2,7 +2,7 @@ alias gitlogin='eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_ed25519'
 
 # basic
 
-alias gs='git statu '
+alias gs='git status'
 alias gd='git diff'
 alias ga='git add'
 alias gaa='git add -A && gs'

@@ -6,5 +6,6 @@
 !.gitignore
 !.git-prompt.sh
 !.bashrc
+!.profile
 !.vimrc
 !.README.md
