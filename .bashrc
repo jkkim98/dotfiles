@@ -62,6 +62,7 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-if [ -f ~/.git_aliases ]; then
-    . ~/.git_aliases
-fi
+# Load Angular CLI autocompletion.
+source <(ng completion script)
+
+sudo service docker start

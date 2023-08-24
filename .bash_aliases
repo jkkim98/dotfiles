@@ -31,6 +31,8 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
+alias dirs='dirs -l -v'
+
 # path shortcuts
 
 alias cdpg='cd ~/playground'
@@ -61,3 +63,22 @@ alias lfeverything='find . -type f -print0 | xargs -0 dos2unix'
 ## yt-lp
 
 alias yt='yt-dlp --no-check-certificate -i -r 500K -f bestvideo+bestaudio --sub-lang "en" --write-sub --add-metadata --embed-thumbnail --embed-subs'
+
+## git
+
+alias gitlogin='eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_ed25519'
+alias gs='git status'
+alias gd='git diff'
+alias ga='git add'
+alias gaa='git add -A && gs'
+alias gap='git add -p && gs'
+alias gds='git diff --staged'
+alias gc='git commit -v && gs'
+alias gca='git commit -v --amend --no-edit && gs'
+alias gp='git push'
+alias gpf='git push --force-with-lease'
+alias gpa='git remote | xargs -I remotes git push remotes master'
+alias gl='git log --oneline --graph'
+alias gls='git log --stat'
+alias glp='git log -p'
+alias dfgit='git --git-dir=.dotfilegit'

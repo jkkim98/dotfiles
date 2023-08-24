@@ -24,4 +24,4 @@ if has('syntax') && has('eval')
 endif
 
 set swapfile
-set dir=~/tmp
+set dir=~/.vim/tmp
