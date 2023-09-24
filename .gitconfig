@@ -1,6 +1,5 @@
-[user]
-	email = 
-	name = 
+[include]
+	path = ~/.gitid
 [core]
 	# true: checkout as CRLF and commit as LF
 	# input: checkout as is and commit as LF

@@ -56,7 +56,7 @@ export NVM_DIR="$HOME/.nvm"
 PATH="$HOME/.local/bin:$PATH"
 PATH="$PATH:/usr/local/go/bin"
 
-PS1='\n\e[00;34m\d \t \e[00;36m\u@\h \e[00;32m\w (\j)\n\$ \e[00m'
+PS1='\n\e[00;34m\d \t \e[00;36m\u@\h \e[00;32m\w (\j)\$ \e[00m'
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
