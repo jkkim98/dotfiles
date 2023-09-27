@@ -56,13 +56,38 @@ export NVM_DIR="$HOME/.nvm"
 PATH="$HOME/.local/bin:$PATH"
 PATH="$PATH:/usr/local/go/bin"
 
-PS1='\n\e[00;34m\d \t \e[00;36m\u@\h \e[00;32m\w (\j)\$ \e[00m'
+#https://gist.github.com/vratiu/9780109
+NoColor="\[\033[0m\]"
+Black="\[\033[0;30m\]"
+Red="\[\033[0;31m\]"
+Green="\[\033[0;32m\]"
+Yellow="\[\033[0;33m\]"
+Blue="\[\033[0;34m\]"
+Purple="\[\033[0;35m\]"
+Cyan="\[\033[0;36m\]"
+White="\[\033[0;37m\]"
 
+Host="\h"
+User="\u"
+Date="\d"
+Time24="\t"
+Time24A="\A"
+Time12h="\T"
+Time12a="\@"
+Path="\w"
+WorkDir="\W"
+NewLine="\n"
+Jobs="\j"
+
+. ~/.git-prompt.sh
+GIT_PS1_SHOWDIRTYSTATE=yeah
+GIT_PS1_SHOWSTASHSTATE=yeah
+GIT_PS1_SHOWUNTRACKEDFILES=yeah
+GIT_PS1_SHOWUPSTREAM=auto
+
+PS1="$Blue$Time24A $Cyan$User@$Host $Green$Path$Yellow"'$(__git_ps1 " (%s)")'" $White(\j)\$$NoColor " 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
-
-# Load Angular CLI autocompletion.
-source <(ng completion script)
 
 sudo service docker start

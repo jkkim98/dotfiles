@@ -2,8 +2,8 @@ unalias -a
 
 alias a='alias'
 alias c='clear'
-alias e='explorer'
-# A: include entires starting with . except . and ..
+alias e.='explorer.exe .'
+# A: include entries starting with . except . and ..
 # b: C-style escape, allows you to copy and use the name elsewhere
 # F: append file indicators
 # G: don't print group name
@@ -83,4 +83,5 @@ alias gpa='git remote | xargs -I remotes git push remotes master'
 alias gl='git log --oneline --graph'
 alias gls='git log --stat'
 alias glp='git log -p'
-alias dfgit='git --git-dir=.dotfilegit'
+alias dfgit='cd ~ && git --git-dir=.dotfilegit'
+
