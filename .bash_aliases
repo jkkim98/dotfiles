@@ -89,7 +89,5 @@ alias dfgit='cd ~ && git --git-dir=.dotfilegit'
 
 ## docker
 
-alias docker-rm-all-containers='docker rm $(docker ps -a -q)'
-alias docker-rm-all-images='docker rmi $(docker images -q)'
-alias docker-rm-all-dangling-images='docker rmi $(docker images -qa -f "dangling=true")'
+alias docker-clean='docker system prune --all -f'
 
