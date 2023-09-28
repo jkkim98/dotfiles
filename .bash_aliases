@@ -57,7 +57,8 @@ mkcd() {
 
 # other
 
-alias src='source ~/.bashrc'
+alias rc='. ~/.bashrc'
+alias aa='vim ~/.bash_aliases'
 alias lfeverything='find . -type f -print0 | xargs -0 dos2unix'
 
 ## yt-lp
@@ -75,6 +76,7 @@ alias gap='git add -p && gs'
 alias gds='git diff --staged'
 alias gst='git stash && gs'
 alias gstp='git stash pop && gs'
+alias gcfd='git clean -fd'
 alias gc='git commit -v && gs'
 alias gca='git commit -v --amend --no-edit && gs'
 alias gp='git push'
@@ -84,4 +86,10 @@ alias gl='git log --oneline --graph'
 alias gls='git log --stat'
 alias glp='git log -p'
 alias dfgit='cd ~ && git --git-dir=.dotfilegit'
+
+## docker
+
+alias docker-rm-all-containers='docker rm $(docker ps -a -q)'
+alias docker-rm-all-images='docker rmi $(docker images -q)'
+alias docker-rm-all-dangling-images='docker rmi $(docker images -qa -f "dangling=true")'
 
