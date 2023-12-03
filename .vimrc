@@ -25,3 +25,5 @@ endif
 
 set swapfile
 set dir=~/.vim/tmp
+set number
+set scrolloff=999
