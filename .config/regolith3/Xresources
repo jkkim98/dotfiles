@@ -1,0 +1,7 @@
+!regolith.look.path: /usr/share/regolith-look/nord
+regolith.look.path: /usr/share/regolith-look/solarized-dark
+regolith.wallpaper.file: /media/jk/data/pictures/anime-wallpapers/1672891365043833.jpg
+regolith.lockscreen.wallpaper.file: /media/jk/data/pictures/anime-wallpapers/1672891365043833.jpg
+wm.gaps.inner.size: 48
+wm.gaps.smart: false
+wm.window.border.size: 6
